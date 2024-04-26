@@ -1,5 +1,5 @@
 ## Walrus operator - declares a variable as an expression
-```
+```python
 n = 5
 for i in range(n):
   for j in range(n):
