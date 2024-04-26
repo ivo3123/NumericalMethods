@@ -7,7 +7,7 @@ for i in range(n):
       print('i is', i, 'j is', j)
 ```
 ## Lambda expressions - an anonymous function
-```
+```python
 sum = lambda a, b: a + b
 print(sum(2, 3))
 
@@ -20,7 +20,7 @@ queadratic_equation = lambda x: 3 * x ** 2 + 4 * x - 2
 ```
 ## Sum
 longer
-```
+```python
 arr = np.array([1, 2, 3])
 
 res = 0
@@ -28,7 +28,7 @@ for i in range(arr.size):
   res += arr[i]
 ```
 shorter
-```
+```python
 arr = np.array([1, 2, 3])
 
 res = sum(arr[i] for i in range(arr.size))
