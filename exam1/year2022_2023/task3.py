@@ -1,6 +1,6 @@
 '''
 Define a function Lagrange(n, A, B, f, x) that constructs the Lagrange interpolation polynomial of degree n for the function f(x),
-    using equidistant nodes in the interval [A, B], and employing the Lagrange formula.
+    using equidistant nodes in the interval [A, B], using the Lagrange formula.
 '''
 
 import numpy as np
