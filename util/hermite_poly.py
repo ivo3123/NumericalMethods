@@ -13,7 +13,7 @@ def divided_difference_generalized(nodes, values, left, right):
     else:
         return (divided_difference_generalized(nodes, values, left+1, right) - divided_difference_generalized(nodes, values, left, right-1)) / (nodes[right] - nodes[left])
 
-def hermit_poly(nodes, values, x):
+def hermite_poly(nodes, values, x):
     """
     Constructs an interpolating polynomial using Hermit's method.
     It's acceptable that 2 different nodes have the same value.
