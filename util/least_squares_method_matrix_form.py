@@ -1,7 +1,7 @@
 import numpy as np
 import numpy.linalg
 
-def mnmk_matrix_function(nodes, values, degree):
+def least_squares_method_matrix_function(nodes, values, degree):
     points_count = nodes.size
     n = degree + 1
 
@@ -28,5 +28,5 @@ def least_squares_method_matrix_poly(nodes, values, x, degree):
         (float | list of floats): the value(s) of the constructed polynomial at x
     """
 
-    coefficients = mnmk_matrix_function(nodes, values, degree)
+    coefficients = least_squares_method_matrix_function(nodes, values, degree)
     return sum(coefficients[i] * x ** i for i in range(coefficients.size))
