@@ -1,7 +1,7 @@
 import numpy as np
 
 def tschebyscheff(n, k, start, end):
-    return ((start + end) / 2) + ((end - start) / 2) * np.cos((2*k - 1) / (2*n) * np.pi)
+    return ((start + end) / 2) + ((end - start) / 2) * np.cos((2*k + 1) / (2*n) * np.pi)
 
 def get_tschebyscheff_nodes(nodes_count, start=-1, end=1):
     """
