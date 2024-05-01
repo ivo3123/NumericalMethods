@@ -1,5 +1,7 @@
 This directory contains all important methods for interpolating, studied in the course.
 
+The files in this directory are .py for reuseability purposes.
+
 Note that the implementations are as generic enough for the purposes of the course and all tasks can be solved with using the implemented methods.
 All functions expect correct input, which is elaborately documented by each of them.
 
