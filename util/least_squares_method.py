@@ -8,7 +8,7 @@ def polynomial_func(arr, x):
     degree = arr.size - 1
     return sum(arr[i] * (x ** (degree - i)) for i in range(arr.size))
 
-def mnmk_function(nodes, values, x, vars_count, desired_kind_function=polynomial_func, objective_func=objective_function, output_func=None):
+def least_squares_method_function(nodes, values, x, vars_count, desired_kind_function=polynomial_func, objective_func=objective_function, output_func=None):
     """
     Constructs a function using the method of the smallest squares
 

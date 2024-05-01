@@ -14,7 +14,7 @@ def mnmk_matrix_function(nodes, values, degree):
 
     return np.linalg.solve(matrix, values_vector_column)
 
-def mnmk_matrix_poly(nodes, values, x, degree):
+def least_squares_method_matrix_poly(nodes, values, x, degree):
     """
     Constructs a polynomial using the method of the smallest squares in its matrix form
 
