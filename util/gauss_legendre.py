@@ -47,9 +47,6 @@ def get_coefficients_and_nodes(nodes_count, weight_function=lambda x: 1):
         
         return (right_solution := [Ith_Element(coefficients[i], nodes[i]) for i in range(len(nodes))])
 
-b = sum(ith_elem.coefficient * f(ith_elem.node) for ith_elem in right_solution)
-print(b)
-
 def calculate_integral(f, left=-1, right=1, nodes_count=3, weight_function=lambda x: 1):
     return (right - left) / 2 * sum(
         ith_elem.coefficient * f((right + left) / 2 + (right - left) * ith_elem.node / 2)
