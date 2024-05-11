@@ -11,13 +11,11 @@ All functions expect correct input, which is elaborately documented by each of t
 * Newton's method
 * Newton's forward method
 * Hermit's method
-
-## Generalized polynomials
-
-* Algebraic polynomial
-* Trigonometric polynomial
-* Exponential polynomial
-* Polynomials of any other basis
+* Generalized polynomials
+    * Algebraic polynomial
+    * Trigonometric polynomial
+    * Exponential polynomial
+    * Polynomials of any other basis
 
 ## Regression analysis
 
@@ -27,3 +25,15 @@ All functions expect correct input, which is elaborately documented by each of t
 ## Nodes
 
 * Tschebyscheff nodes
+
+## Definite integral approximation
+
+* Rectangles method
+* Trapezoids method
+* Simpson's method
+* Gauss-Legendre method
+
+## Root finding approximaion
+
+* Newton-Raphson method
+* Bisection method
