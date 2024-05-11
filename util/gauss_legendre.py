@@ -48,6 +48,20 @@ def get_coefficients_and_nodes(nodes_count, weight_function=lambda x: 1):
         return (right_solution := [Ith_Element(coefficients[i], nodes[i]) for i in range(len(nodes))])
 
 def calculate_integral(f, left=-1, right=1, nodes_count=3, weight_function=lambda x: 1):
+    """
+    Calculates approximately the value of the definite integral using the Gauss-Legendre formula.
+
+    Args:
+        f (function(x)): the function under the integral
+        left [optional] (float): [default is -1] lower bound of the integral
+        right [optional] (float): [default is 1] upper bound of the integral
+        nodes_count [optional] (int): [default is 3] the nodes used in the Gauss-Legendre formula, should be >= 1
+        weight_function [optional] (function(x)): the weight function in the Gauss-Legendre formula
+
+    Returns:
+        (float): the value of the definite integral, approximately
+    """
+
     return (right - left) / 2 * sum(
         ith_elem.coefficient * f((right + left) / 2 + (right - left) * ith_elem.node / 2)
         for ith_elem in get_coefficients_and_nodes(nodes_count, weight_function=weight_function)
